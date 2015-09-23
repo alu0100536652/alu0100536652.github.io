@@ -12,14 +12,12 @@ function sizes() {
         home = $('.home'),
         fontSize = ($(window).height() * 0.11),
 	    paddingSection = ($(window).height() * 0.3),
-	    slogan = $('.slogan'),
-	    subTitle = $('.subTitle');
+	    slogan = $('.slogan');
 	
         
     home.css({"height": windowsHeight});
     slogan.css({"padding-top":paddingSection});
 	slogan.css({"font-size":fontSize});
-	subTitle.css({"font-size":(fontSize * 0.5)});
 	
 	var introwork = $('.introwork'),
 	    introworktitle = $('.introworktitle');
@@ -27,10 +25,6 @@ function sizes() {
 	introwork.css({"height": windowsHeight * 0.5});
 	introworktitle.css({"padding-top":paddingSection * 0.5});
 	introworktitle.css({"font-size":fontSize});
-	    
-	
-	var about = $('.about');
-	about.css({"height": windowsHeight * 0.6});
         
     
     $(window).scroll(function() {
