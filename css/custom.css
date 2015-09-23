@@ -43,6 +43,15 @@
     text-justify: inter-word;
 }
 
+.cuadro {
+	border: 1px solid #888;
+	padding: 15px;
+}
+
+.titlework {
+	margin-bottom: 70px;
+}
+
 @media screen and (max-width: 750px) {
 	header {
 		display: none;
