@@ -1,5 +1,61 @@
+.home {
+    text-align: center;
+    background: url(../images/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
-header {
+.slogan {
+	color: #FFF;
+	font-weight: bold;
+}
+
+.subtitle {
+	color: #FFF;
+}
+
+.about {
+    padding-top: 150px;
+	padding-bottom: 150px;
+	text-align: center;
+    text-justify: inter-word;
+}
+
+.introwork {
+	word-break: break-all;
+	position: relative;
+	text-align: center;
+	background: url(../images/bg2.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	   -moz-background-size: cover;
+  	     -o-background-size: cover;
+  		    background-size: cover;
+}
+
+.introworktitle {
+    font-weight: bold;
+    color: #FFF;
+    
+}
+
+.work {
+    padding-top: 150px;
+	padding-bottom: 150px;
+	text-align: center;
+    text-justify: inter-word;
+}
+
+
+@media screen and (max-width: 750px) {
+	header {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 750px) {
+    header {
     position: fixed;
     top: 0;
     left:0;
@@ -7,6 +63,13 @@ header {
     height: 60px;
     background-color: transparent;
     z-index: 50;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+
 }
 
 .logo {
@@ -53,21 +116,4 @@ nav {
   		border-bottom: 4px solid #FFF;
 	}
 
-
-.home {
-    text-align: center;
-    background: url("/images/bg.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.slogan {
-	color: #FFF;
-	font-weight: bold;
-}
-
-.subtitle {
-	color: #FFF;
 }

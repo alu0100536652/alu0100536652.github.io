@@ -14,11 +14,23 @@ function sizes() {
 	    paddingSection = ($(window).height() * 0.3),
 	    slogan = $('.slogan'),
 	    subTitle = $('.subTitle');
+	
         
     home.css({"height": windowsHeight});
     slogan.css({"padding-top":paddingSection});
 	slogan.css({"font-size":fontSize});
 	subTitle.css({"font-size":(fontSize * 0.5)});
+	
+	var introwork = $('.introwork'),
+	    introworktitle = $('.introworktitle');
+	
+	introwork.css({"height": windowsHeight * 0.5});
+	introworktitle.css({"padding-top":paddingSection * 0.5});
+	introworktitle.css({"font-size":fontSize});
+	    
+	
+	var about = $('.about');
+	about.css({"height": windowsHeight * 0.6});
         
     
     $(window).scroll(function() {
@@ -29,7 +41,7 @@ function sizes() {
 		if($(window).scrollTop() > ($(window).height() - 50)) 
 	    {
 	   		mainmenu.css({"background-color": "#FFF"});
-	   		mainmenu.css({"border-bottom": "3px solid #33C3F0"});
+	   		mainmenu.addClass("shadow");
 	   		logo.css({"color": "#222"});
 	   		menu.css({"color": "#222"});
 	   		menu.hover(function() {
@@ -39,7 +51,7 @@ function sizes() {
 		else
 		{ 
 			mainmenu.css({"background-color": "transparent"});
-			mainmenu.css({"border-bottom": "none"});
+		    mainmenu.removeClass("shadow");
 			logo.css({"color": "#FFF"});
 	   		menu.css({"color": "#FFF"});
 	   		menu.hover(function() {
